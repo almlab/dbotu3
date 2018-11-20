@@ -90,6 +90,6 @@ Author
 
 If you find a bug or have a request for a new feature, open an issue_.
 
-.. _issue: https://github.com/swo/dbotu3/issues
+.. _issue: https://github.com/almlab/dbotu3/issues
 
 Scott Olesen / *swo at alum.mit.edu*
