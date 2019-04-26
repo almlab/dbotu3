@@ -1,5 +1,5 @@
 {% set name = "dbotu" %}
-{% set version = "1.5.1" %}
+{% set version = "1.5.2" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash_value = "384abd3fdce7b355255eeefcc671d037191520d9223be7a8f58a41a10f97e3ce" %}
@@ -9,6 +9,7 @@ package:
   version: '{{ version }}'
 
 source:
+  # path: ../ # for local testing only
   fn: '{{ name }}-{{ version }}.{{ file_ext }}'
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
   '{{ hash_type }}': '{{ hash_value }}'
@@ -127,6 +128,8 @@ about:
       - 1.5.0: Added the restart and rep seq scripts
 
       - 1.5.1: New function for Qiime2 compatibility
+
+      - 1.5.2: Move files around to make this a Python package (rather than dbotu.py script)
 
 
     To-do
