@@ -63,6 +63,7 @@ Version history
 - 1.5.0: Added the restart and rep seq scripts
 - 1.5.1: New function for Qiime2 compatibility
 - 1.5.2: Move files around to make this a Python package (rather than dbotu.py script)
+- 1.5.3: Point to conda, rather than PyPi, installation
 
 To-do
 -----
