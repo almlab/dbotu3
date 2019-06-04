@@ -4,7 +4,7 @@ with open('README.md') as f:
     readme=f.read()
 
 setup(name='dbotu',
-    version='1.5.2',
+    version='1.5.3',
     description='Distribution-based OTU calling',
     long_description=readme,
     author='Scott Olesen',
