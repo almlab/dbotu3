@@ -1,20 +1,20 @@
 from setuptools import find_packages, setup
 
-with open('README.rst') as f:
+with open('README.md') as f:
     readme=f.read()
 
 setup(name='dbotu',
-    version='1.5.1',
+    version='1.5.2',
     description='Distribution-based OTU calling',
     long_description=readme,
     author='Scott Olesen',
     author_email='swo@alum.mit.edu',
     platforms=['any'],
     license='License :: OSI Approved :: MIT License',
-    url='http://github.com/swo/dbotu3',
+    url='http://github.com/almlab/dbotu3',
     scripts=['scripts/dbotu3.py', 'scripts/dbotu_restart.py', 'scripts/dbotu_rep_seqs.py'],
     install_requires=['numpy', 'pandas', 'scipy', 'biopython', 'python-Levenshtein'],
-    package_date={'dbotu': ['data/input/counts.txt', 'data/input/seq.fa',
+    package_data={'dbotu': ['data/input/counts.txt', 'data/input/seq.fa',
         'data/output/log.txt', 'data/output/membership.txt', 'data/output/otu.txt',
         'test/improper_data/counts.csv', 'test/improper_data/counts_biom.txt']},
     classifiers=['Development Status :: 4 - Beta', 'Environment :: Console',
