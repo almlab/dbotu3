@@ -59,6 +59,23 @@ To-do
 - Testing for the restart scripts
 - Better coverage for unit tests
 
+Building the package
+--------------------
+
+dbotu3 was originally made as a pip package. However, after writing the dbotu QIIME 2
+plugin, it was switched to conda. **The pip package is no longer updated.**
+
+To re-build an updated version of the `dbotu` package:
+
+```
+conda-build recipe/ -c conda-forge
+```
+
+This builds a local version of the package (specified in `meta.yaml`, `source: path: ../`).
+The contents of the `dbotu` package content are specified in `dbotu/__init__.py`.
+The scripts in `scripts/` are accessories, and aren't actually used by the package/module.
+
+
 Citation
 --------
 
